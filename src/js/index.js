@@ -4,6 +4,13 @@ import {ApiWithServer} from "./api.js";
 
 
 
+//
+// Тут код не очень хороший, он отвечает за интерфейс
+// Смотрите код, который идет в папке chart
+//
+
+
+
 
 
 let savedSymbols 	= [];  	// Saved Symbols
