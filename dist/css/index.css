@@ -1,0 +1,161 @@
+body{
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	color: white;
+	height: 100%;
+	position: absolute;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+}
+
+
+
+
+
+
+*::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+  background: #0b0b5a6b;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #14275a;    /* color of the scroll thumb */
+}
+
+
+
+#Terminal{
+	width: 100%;
+	height: 100%;
+	background: #192341;
+}
+
+#Terminal__SavedSymbols{
+    width: 100%;
+    height: 35px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+
+#Terminal__Setting{
+    width: 100%;
+    height: 39px;
+    background: #0c142c;
+    margin-bottom: 1px;
+    overflow: hidden;
+}
+
+
+#Terminal__Chart{
+	width: 100%;
+	position: relative; 
+	height: calc(100% - 215px);
+    overflow: hidden;
+}
+
+
+#Terminal__Orders{
+    width: 100%;
+    height: 119px;
+    background: #0c142c;
+    margin-top: 1px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Terminal__Info{
+    width: 100%;
+    height: 19px;
+    overflow: hidden;
+    margin-top: 1px;
+    background: #0c142c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#SetSymbol{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index:  3;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#SetSymbol.active{
+    display: flex;
+}
+
+
+#StartTerminal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index:  3;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#StartTerminal.active{
+    display: flex;
+}
+
+
+
+
+#Strategy{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index:  3;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#Strategy.active{
+    display: flex;
+}
+
+
+
+
+* {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

@@ -1,0 +1,12 @@
+#Terminal__Info__Params{
+    display: flex;
+
+}
+
+#Terminal__Info__Params p{
+    font-size: 10px;
+}
+
+.terminal__info__block{
+    margin: 0 10px;
+}

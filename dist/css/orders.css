@@ -1,0 +1,318 @@
+#Terminal__Orders{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#Terminal__Orders__View{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    border-right: 1px solid #192341;
+}
+
+
+
+#Terminal__Orders__Container{
+    width: calc(100% - 200px);
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Terminal__Orders__None{
+    width: calc(100% - 8px);
+    height: calc(100% - 16px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Terminal__Orders__None p{
+    color: #404f7c;
+    font-weight: 800;
+}
+
+
+
+#Terminal__Orders__Type{
+    height: calc(100% - 6px);
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3px 0;
+}
+
+.terminal__orders__type__block{
+    height: 23%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.terminal__orders__type__block:hover{
+    background: #192341;
+}
+
+.terminal__orders__type__block.active{
+    background: #192341;
+}
+
+.terminal__orders__type__block p{
+    font-size: 9px;
+}
+
+
+
+
+
+
+#Terminal__Orders__Container__AllOrders{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#Terminal__Orders__Time{
+    height: cacl(100% - 6px);
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3px 0;
+
+}
+
+.terminal__orders__time__block{
+    height: 23%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-bottom: 2%;
+}
+
+.terminal__orders__time__block:hover{
+    background: #192341;
+}
+
+.terminal__orders__time__block.active{
+    background: #192341;
+}
+
+.terminal__orders__time__block p{
+    font-size: 9px;
+}
+
+
+
+
+
+
+.orders-table{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.orders-table-title{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.order-block{
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+    margin: 1px;
+}
+
+.order-block p{
+    font-size: 10px;
+}
+
+.order-block-title{
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.order-block-title p{
+    font-size: 11px;
+}
+
+
+
+
+
+.order-number{
+    width: 10px;
+}
+
+.order-symbol{
+    width: 70px;
+}
+
+.order-margin{
+    width: 60px;
+}
+
+.order-order{
+    width: 70px;
+}
+
+.order-quantity{
+    width: 60px;
+}
+
+.order-type{
+    width: 40px;
+}
+
+.order-price{
+    width: 100px;
+}
+
+.order-remove{
+    padding-top: 5px;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Terminal__Strategies{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+
+.strategy-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 6px);
+    width: 100px;
+    padding: 2px 0;
+}
+
+.strategy-block-name{
+    height: 23%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 1% 0;
+}
+
+.strategy-block-name:hover{
+    background: #192341;
+}
+
+.strategy-block-name p{
+    font-size: 9px;
+}
+
+
+
+.strategy-remove-block{
+    width: 20px;
+    height: calc(100% - 6px);
+    padding: 2px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.strategy-remove-block-action{
+    height: 23%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 1% 0;
+    opacity: 0.7;
+}
+
+.strategy-remove-block-action:hover{
+    opacity: 1;
+}
+
+
+
+.strategy-block-add{
+    height: 23%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 1% 0;
+}
+
+.strategy-block-add:hover{
+    background: #192341;
+}
+
+.strategy-block-add p{
+    font-size: 9px;
+}
+
+
+.strategy-symbols{
+    width: calc(100% - 121px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.strategy-symbol{
+    padding: 0px 15px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin: 4px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.strategy-symbol:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.strategy-symbol p{
+    font-size: 9px;
+}

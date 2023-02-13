@@ -1,0 +1,7 @@
+.icon  {background-position: center center; background-repeat: no-repeat; background-size:contain; width: 0.8em; height: 0.8em; display: inline-block}
+
+.add-icon{ background-image: url("../icons/plus.png"); }
+.close-icon{ background-image: url("../icons/cancel.png"); }
+.edit-icon{ background-image: url("../icons/draw.png"); }
+.ok-icon{ background-image: url("../icons/check.png"); }
+.remove-icon{ background-image: url("../icons/remove.png"); }

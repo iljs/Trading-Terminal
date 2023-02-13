@@ -1,0 +1,78 @@
+#Strategy__Container{
+    width: 450px;
+    height: 260px;
+    background: #192341;
+	border-radius: 10px;
+	padding: 20px 20px 10px 20px;
+}
+
+
+#Strategy__Title h6{
+    font-size: 18px;
+}
+
+
+#Strategy__Inputs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.strategy-inputs{
+    width: 48%;
+    margin-top: 10px;
+}
+
+.strategy-inputs input{
+    width: calc(100% - 34px);
+    padding: 10px 15px;
+    background: #192341;
+    border: 2px solid rgba(255,255,255,0.1);
+    color: white;
+    font-size: 10px;
+    font-family: 'Montserrat';
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.strategy-inputs p{
+    font-size: 8px;
+}
+
+
+
+#Strategy__Buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+#Strategy__Cancel{
+    width: calc(48% - 30px);
+    padding: 10px 15px;
+    border: 2px solid rgba(113, 0, 0, 0.7);
+    border-radius: 5px;
+    font-size: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+#Strategy__Save{
+    width: calc(48% - 30px);
+    padding: 10px 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    font-size: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}

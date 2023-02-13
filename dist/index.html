@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" shrink-to-fit="no" user-scalable="no" viewport-fit="cover" name="viewport">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" type="text/css" href="./css/icons.css">
+
+	<link rel="stylesheet" type="text/css" href="./css/chart.css">
+	<link rel="stylesheet" type="text/css" href="./css/savedSymbols.css">
+	<link rel="stylesheet" type="text/css" href="./css/orders.css">
+	<link rel="stylesheet" type="text/css" href="./css/info.css">
+	<link rel="stylesheet" type="text/css" href="./css/setting.css">
+	
+
+	<link rel="stylesheet" type="text/css" href="./css/setSymbol.css">
+	<link rel="stylesheet" type="text/css" href="./css/startTerminal.css">
+	<link rel="stylesheet" type="text/css" href="./css/strategy.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="Terminal">
+        <div id="Terminal__SavedSymbols">
+			
+        </div>
+        <div id="Terminal__Setting">
+        	<div id="Terminal__Setting__Order">
+        		<div id="Terminal__Setting__Order__Balance" class="terminal-settings">
+	            	<p id="Terminal__Setting__Order__Balance__P">Balance: 1000.00 $</p>
+	            </div>
+	            <div id="Terminal__Setting__Order__Order" class="terminal-settings">
+	            	<div id="Terminal__Setting__Order__Options" class="view">
+	            		<div id="Terminal__Setting__Order__Order_1" class="low-button">
+		            		<p id="Terminal__Setting__Order__Order_1P"></p>
+		            	</div>
+		            	<div id="Terminal__Setting__Order__Order_2" class="low-button active">
+		            		<p id="Terminal__Setting__Order__Order_2P"></p>
+		            	</div>
+		            	<div id="Terminal__Setting__Order__Order_3" class="low-button">
+		            		<p id="Terminal__Setting__Order__Order_3P"></p>
+		            	</div>
+		            	<div id="Terminal__Setting__Order__Order_4" class="low-button">
+		            		<p id="Terminal__Setting__Order__Order_4P"></p>
+		            	</div>
+		            	<div id="Terminal__Setting__Order__Order_Edit">
+		            		<div class="icon edit-icon"></div>
+		            	</div>
+	            	</div>
+	            	<div id="Terminal__Setting__Order__Set">
+	            		<div class="low-input">
+	            			<input type="number" value="0" id="Terminal__Setting__Order__Set__Block__Input1">
+	            		</div>
+	            		<div class="low-input">
+	            			<input type="number" value="0" id="Terminal__Setting__Order__Set__Block__Input2">
+	            		</div>
+	            		<div class="low-input">
+	            			<input type="number" value="0" id="Terminal__Setting__Order__Set__Block__Input3">
+	            		</div>
+	            		<div class="low-input">
+	            			<input type="number" value="0" id="Terminal__Setting__Order__Set__Block__Input4">
+	            		</div>
+	            		<div id="Terminal__Setting__Order__Set_Sumbit">
+		            		<div class="icon ok-icon"></div>
+		            	</div>
+	            	</div>
+	            </div>
+	            <div id="Terminal__Setting__Order__Close" class="terminal-settings">
+	            	<div id="Terminal__Setting__Order__Close__1" class="low-button active">
+	            		<p>1</p>
+	            	</div>
+	            	<div id="Terminal__Setting__Order__Close__1/2" class="low-button">
+	            		<p>1/2</p>
+	            	</div>
+	            	<div id="Terminal__Setting__Order__Close__1/4" class="low-button">
+	            		<p>1/4</p>
+	            	</div>
+	            </div>
+	            <div id="Terminal__Setting__Order__Leverage" class="terminal-settings">
+	            	<input id="Terminal__Setting__Order__Leverage__Input" type="number" value="10" placeholder="Leverage">
+	            </div>
+        	</div>
+            <div id="Terminal__Setting__Mode">
+            	<div id="Terminal__Setting__Mode__Request" class="high-button">
+            		<p id="Terminal__Setting__Mode__Request__P">Active</p>
+            	</div>
+            	<div id="Terminal__Setting__Mode__View" class="high-button">
+            		<p id="Terminal__Setting__Mode__View__P">Merge</p>
+            	</div>
+            </div>
+        </div>
+        <div id="Terminal__Chart">
+        	<div id="Terminal__Chart__Container">
+        		<div id="chart__price"></div>
+				<div id="chart__container" oncontextmenu="return false;"></div>
+				<div id="chart__order-book"></div>
+				<div id="chart__symbol"><p id="chart__symbol-text"></p></div>
+				<div id="chart__date"></div>
+				<div id="chart__timeFrame">
+				</div>
+        	</div>
+		</div>
+
+		<div id="Terminal__Orders">
+			<div id="Terminal__Orders__View">
+				<div id="Terminal__Orders__Type">
+					<div 	id="Terminal__Orders__Type__Limit" 
+							class="terminal__orders__type__block " 
+					>
+						<p>Limit</p>
+					</div>
+					<div 	id="Terminal__Orders__Type__Orders" 
+							class="terminal__orders__type__block active" 
+					>
+						<p>Orders</p>
+					</div>
+					<div 	id="Terminal__Orders__Type__TP" 
+							class="terminal__orders__type__block" 
+					>
+						<p>TakeProfit</p>
+					</div>
+					<div 	id="Terminal__Orders__Type__SL" 
+							class="terminal__orders__type__block" 
+					>
+						<p>StopLoss</p>
+					</div>
+				</div>
+				<div id="Terminal__Orders__Container">
+					
+					
+				</div>
+				<div id="Terminal__Orders__Time">
+					<div 	id="Terminal__Orders__Time__Now" 
+							class="terminal__orders__time__block active" 
+							onclick="setViewOrderTime('now')"
+					>
+						<p>Now</p>
+					</div>
+					<div 	id="Terminal__Orders__Time__History" 
+							class="terminal__orders__time__block" 
+							onclick="setViewOrderTime('history')"
+					>
+						<p>History</p>
+					</div>
+				</div>
+			</div>
+           <div id="Terminal__Strategies">
+
+		   </div>
+        </div>
+        <div id="Terminal__Info">
+            <div id="Terminal__Info__Params">
+                <div class="terminal__info__block">
+                    <p id="Terminal__Info__Params__Ping">Ping: </p>
+                </div>
+                <div class="terminal__info__block">
+                    <p id="Terminal__Info__Params__Render">Render: </p>
+                </div>
+                <div class="terminal__info__block">
+                    <p id="Terminal__Info__Params__Items">Items: </p>
+                </div>
+                <div class="terminal__info__block">
+                    <p id="Terminal__Info__Params__InternalScale">Scale: </p>
+                </div>
+				<div class="terminal__info__block">
+                    <p id="Terminal__Info__Params__Scale">Scale: </p>
+                </div>
+            </div>
+        </div>
+	</div>
+
+	<div id="SetSymbol">
+		<div id="SetSymbol__Container">
+			<div id="SetSymbol__TitleTable">
+				<div class="setSymbol__block">
+					<div class="setSymbol__symbol__title">
+	                    <div class="setSymbol__title setSymbol__symbol">
+	                        <p>Symbol</p>
+	                    </div>
+	                    <div class="setSymbol__title setSymbol__price">
+	                        <p>Price</p>
+	                    </div>
+	                    <div class="setSymbol__title setSymbol__volume">
+	                        <p>Volume</p>
+	                    </div>
+						<div class="setSymbol__title setSymbol__delta">
+	                        <p>Delta 15m</p>
+	                    </div>
+	                    <div class="setSymbol__title setSymbol__delta">
+	                        <p>Delta 1h</p>
+	                    </div>
+	                </div>
+	                <div class="setSymbol__mode__title">
+	                    <div class="setSymbol__title">
+	                        <p>Mode</p>
+	                    </div>
+	                </div>
+                </div>
+			</div>
+			<div id="SetSymbol__Table">
+				<div id="SetSymbol__TableContainer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="Strategy">
+		<div id="Strategy__Container">
+			<div id="Strategy__Title">
+				<h6>Strategy</h6>
+			</div>
+			<div id="Strategy__Inputs">
+				<div class="strategy-inputs">
+					<input type="text" id="StrategyInput__Name">
+					<p>Name Strategy</p>
+				</div>
+				<div class="strategy-inputs">
+					<input type="text" id="StrategyInput__Timeout" value="15">
+					<p>Timeout Strategy ( min )</p>
+				</div>
+				<div class="strategy-inputs">
+					<input type="text" id="StrategyInput__Delta15Min" value="0">
+					<p>Delta 15min ( percent )</p>
+				</div>
+				<div class="strategy-inputs">
+					<input type="text" id="StrategyInput__Delta1Hour" value="0">
+					<p>Delta 1 hour ( percent )</p>
+				</div>
+				<div class="strategy-inputs">
+					<input type="text" id="StrategyInput__Volume15Min" value="0">
+					<p>Volume 15min ( USDT )</p>
+				</div>
+				<div class="strategy-inputs">
+					<input type="text" id="StrategyInput__Volume1Hour" value="0">
+					<p>Volume 1 hour ( USDT )</p>
+				</div>
+				<input type="hidden" id="StrategyInput__Actions">
+				<input type="hidden" id="StrategyInput__Id">
+			</div>
+			<div id="Strategy__Buttons">
+				<div id="Strategy__Cancel">
+					<p>Cancel</p>
+				</div>
+				<div id="Strategy__Save">
+					<p>Save</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
+
+
+<!-- 
+
+#111827 - Main Color
+#111626 - Other
+
+
+
+
+
+
+
+-->
